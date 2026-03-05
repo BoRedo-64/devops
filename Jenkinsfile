@@ -21,10 +21,9 @@ pipeline {
             }
         }
 
-        stage('Check Docker') {
+        stage('Build Docker Image') {
             steps {
-                sh 'docker version'
-                sh 'docker images'
+                sh 'docker build -t boredo64/devops-app:1.0 .'
             }
         }
 
