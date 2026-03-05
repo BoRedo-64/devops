@@ -27,5 +27,12 @@ pipeline {
             }
         }
 
+        stage('Push Image') {
+            steps {
+                sh 'docker login -u USERNAME -p PASSWORD'
+                sh 'docker push boredo64/devops-app:1.0'
+            }        
+        }
+
     }
 }
