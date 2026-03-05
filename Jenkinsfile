@@ -23,14 +23,14 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t boredo64/devops-app:1.0 .'
+                sh 'docker build -t yahyabichiou/devops-app:1.0 .'
             }
         }
 
         stage('Push Image') {
             steps {
                 sh 'docker login -u USERNAME -p PASSWORD'
-                sh 'docker push boredo64/devops-app:1.0'
+                sh 'docker push yahyabichiou/devops-app:1.0'
             }        
         }
 
