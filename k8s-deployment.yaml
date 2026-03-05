@@ -25,10 +25,10 @@ spec:
           value: jdbc:mysql://mysql-service:3306/springdb
 
         - name: SPRING_DATASOURCE_USERNAME
-          value: root
+          value: root123
 
         - name: SPRING_DATASOURCE_PASSWORD
-          value: root
+          value: root123
 
         - name: SPRING_JPA_HIBERNATE_DDL_AUTO
           value: update
