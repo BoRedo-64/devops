@@ -29,7 +29,7 @@ pipeline {
 
         stage('Push Image') {
             steps {
-                sh 'docker login -u USERNAME -p PASSWORD'
+                sh 'docker login -u yahyabichiou -p Bichiou2003'
                 sh 'docker push yahyabichiou/devops-app:1.0'
             }        
         }
